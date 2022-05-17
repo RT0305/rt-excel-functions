@@ -1,0 +1,7 @@
+MLOOKUP = LAMBDA(
+lookup_value,
+lookup_array,
+return_array,
+[if_not_found],
+IFERROR(TRANSPOSE(FILTER(return_array,lookup_array=lookup_value)),if_not_found)
+);
