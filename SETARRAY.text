@@ -1,0 +1,4 @@
+SETARRAY 
+= LAMBDA(object_array, title,
+    FILTER(object_array, (object_array <> "") * (object_array <> title))
+);
